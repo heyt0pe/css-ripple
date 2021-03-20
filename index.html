@@ -1,0 +1,31 @@
+<html>
+    <body>
+        <style>
+            body{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+            .circle{
+                width: 55px;
+                height: 55px;
+                border-radius: 50%;
+                box-sizing: border-box;
+                background: red;
+            }
+            .circle:hover{
+                background-color: black;
+                animation: ripple 1s linear infinite;
+            }
+            @keyframes ripple{
+                0% {
+                    box-shadow: 0 0 0 0px pink;
+                }
+                100% {
+                    box-shadow: 0 0 0 40px transparent;
+                }
+            }
+        </style>
+        <div class="circle"></div>
+    </body>
+</html>
